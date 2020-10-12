@@ -1,8 +1,7 @@
 #include "mylibrary.h"
 int sum_of_1_to_n(int n)
 {
-	int sum = 0;
-	int i=0;
+	int sum,i=0;
 	for(i=0;i<=n;i++){
 		sum=sum+i;
 	}
@@ -22,7 +21,7 @@ int sum_of_even_numbers(int *array, int count)
 		remainder=(array[i]%2);
 		if((remainder)==0){
 		//TODO: only add even numbers, e.g., 4. Skip odd numbers, e.g., 3
-		sum += array[i];
+		sum= sum+array[i];
 	        }
 	}
 	return sum;
@@ -58,8 +57,7 @@ int reversed_number(int number)
 int is_prime(int number)
 {
 	//TODO: return 1 if the input number is prime, otherwise 0
-	int a=0;
-	int b=0;
+	int a,b=0;
 	int remainder=0;
 	int isPrimeNumber=1;
 		for(b=2;b<=(a/2);b++){
